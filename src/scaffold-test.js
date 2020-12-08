@@ -2,6 +2,7 @@ import sinon from 'sinon';
 import any from '@travi/any';
 import {assert} from 'chai';
 import * as lernaScaffolder from './lerna';
+import * as releaseScaffolder from './release';
 import scaffold from './scaffold';
 
 suite('scaffolder', () => {
@@ -11,14 +12,17 @@ suite('scaffolder', () => {
     sandbox = sinon.createSandbox();
 
     sandbox.stub(lernaScaffolder, 'default');
+    sandbox.stub(releaseScaffolder, 'default');
   });
 
   teardown(() => sandbox.restore());
 
   test('that the project is scaffolded', async () => {
     const lernaResults = any.simpleObject();
+    const releaseResults = any.simpleObject();
     lernaScaffolder.default.resolves(lernaResults);
+    releaseScaffolder.default.resolves(releaseResults);
 
-    assert.deepEqual(await scaffold(), lernaResults);
+    assert.deepEqual(await scaffold(), {...lernaResults, ...releaseResults});
   });
 });
