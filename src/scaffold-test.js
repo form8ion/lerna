@@ -18,11 +18,12 @@ suite('scaffolder', () => {
   teardown(() => sandbox.restore());
 
   test('that the project is scaffolded', async () => {
+    const projectRoot = any.string();
     const lernaResults = any.simpleObject();
     const releaseResults = any.simpleObject();
-    lernaScaffolder.default.resolves(lernaResults);
+    lernaScaffolder.default.withArgs({projectRoot}).resolves(lernaResults);
     releaseScaffolder.default.resolves(releaseResults);
 
-    assert.deepEqual(await scaffold(), {...lernaResults, ...releaseResults});
+    assert.deepEqual(await scaffold({projectRoot}), {...lernaResults, ...releaseResults});
   });
 });
