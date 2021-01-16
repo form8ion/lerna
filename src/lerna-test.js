@@ -22,7 +22,16 @@ suite('lerna scaffolder', () => {
       await scaffold({projectRoot}),
       {
         devDependencies: ['lerna'],
-        scripts: {bootstrap: 'lerna bootstrap', 'test:packages': 'lerna run --parallel test'}
+        scripts: {bootstrap: 'lerna bootstrap', 'test:packages': 'lerna run --parallel test'},
+        badges: {
+          contribution: {
+            lerna: {
+              text: 'lerna',
+              link: 'https://lerna.js.org/',
+              img: 'https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg'
+            }
+          }
+        }
       }
     );
     assert.calledWith(
