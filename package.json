@@ -59,7 +59,7 @@
     "@travi/any": "2.0.16",
     "babel-plugin-istanbul": "6.0.0",
     "ban-sensitive-files": "1.9.15",
-    "chai": "4.3.3",
+    "chai": "4.3.4",
     "codecov": "3.8.1",
     "cross-env": "7.0.3",
     "cz-conventional-changelog": "3.3.0",
