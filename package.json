@@ -47,7 +47,7 @@
     "lint:peer": "npm ls >/dev/null"
   },
   "devDependencies": {
-    "@babel/register": "7.13.8",
+    "@babel/register": "7.13.14",
     "@cucumber/cucumber": "7.0.0-rc.0",
     "@form8ion/babel-preset": "1.6.52",
     "@form8ion/commitlint-config": "1.0.16",
