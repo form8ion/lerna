@@ -58,7 +58,7 @@
     "@istanbuljs/nyc-config-babel": "3.0.0",
     "@travi/any": "2.0.17",
     "babel-plugin-istanbul": "6.0.0",
-    "ban-sensitive-files": "1.9.15",
+    "ban-sensitive-files": "1.9.16",
     "chai": "4.3.4",
     "codecov": "3.8.2",
     "cross-env": "7.0.3",
