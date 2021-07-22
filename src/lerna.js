@@ -1,7 +1,10 @@
 import {promises as fs} from 'fs';
 
-export default function ({projectRoot}) {
-  fs.writeFile(`${projectRoot}/lerna.json`, JSON.stringify({version: 'independent', packages: ['packages/*']}));
+export default function ({projectRoot, packageManager}) {
+  fs.writeFile(
+    `${projectRoot}/lerna.json`,
+    JSON.stringify({version: 'independent', packages: ['packages/*'], npmClient: packageManager})
+  );
 
   return {
     devDependencies: ['lerna'],

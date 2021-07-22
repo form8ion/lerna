@@ -14,6 +14,8 @@ opinionated scaffolder for monorepos managed with [Lerna](https://lerna.js.org/)
 * [Usage](#usage)
   * [Installation](#installation)
   * [Example](#example)
+    * [Import](#import)
+    * [Execute](#execute)
 * [Contributing](#contributing)
   * [Dependencies](#dependencies)
   * [Verification](#verification)
@@ -39,6 +41,7 @@ $ npm install @form8ion/lerna --save
 #### Import
 
 ```javascript
+import {packageManagers} from '@form8ion/javascript-core';
 import {scaffold} from '@form8ion/lerna';
 ```
 
@@ -46,7 +49,7 @@ import {scaffold} from '@form8ion/lerna';
 
 ```javascript
 (async () => {
-  await scaffold({projectRoot: process.cwd()});
+  await scaffold({projectRoot: process.cwd(), packageManager: packageManagers.NPM});
 })();
 ```
 

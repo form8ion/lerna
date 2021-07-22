@@ -17,9 +17,10 @@ suite('lerna scaffolder', () => {
 
   test('that a lerna monorepo is created', async () => {
     const projectRoot = any.string();
+    const packageManager = any.word();
 
     assert.deepEqual(
-      await scaffold({projectRoot}),
+      await scaffold({projectRoot, packageManager}),
       {
         devDependencies: ['lerna'],
         scripts: {bootstrap: 'lerna bootstrap', 'test:packages': 'lerna run --parallel test'},
@@ -37,7 +38,7 @@ suite('lerna scaffolder', () => {
     assert.calledWith(
       fs.writeFile,
       `${projectRoot}/lerna.json`,
-      JSON.stringify({version: 'independent', packages: ['packages/*']})
+      JSON.stringify({version: 'independent', packages: ['packages/*'], npmClient: packageManager})
     );
   });
 });

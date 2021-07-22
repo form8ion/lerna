@@ -9,5 +9,5 @@ Then('lerna will be configured', async function () {
   assert.include(devDependencies, 'lerna');
   assert.equal(scripts.bootstrap, 'lerna bootstrap');
   assert.equal(scripts['test:packages'], 'lerna run --parallel test');
-  assert.deepEqual(lernaConfig, {version: 'independent', packages: ['packages/*']});
+  assert.deepEqual(lernaConfig, {version: 'independent', packages: ['packages/*'], npmClient: this.packageManager});
 });

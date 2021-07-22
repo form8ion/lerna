@@ -21,9 +21,10 @@ suite('scaffolder', () => {
     const projectRoot = any.string();
     const lernaResults = any.simpleObject();
     const releaseResults = any.simpleObject();
-    lernaScaffolder.default.withArgs({projectRoot}).resolves(lernaResults);
+    const packageManager = any.word();
+    lernaScaffolder.default.withArgs({projectRoot, packageManager}).resolves(lernaResults);
     releaseScaffolder.default.resolves(releaseResults);
 
-    assert.deepEqual(await scaffold({projectRoot}), {...lernaResults, ...releaseResults});
+    assert.deepEqual(await scaffold({projectRoot, packageManager}), {...lernaResults, ...releaseResults});
   });
 });
