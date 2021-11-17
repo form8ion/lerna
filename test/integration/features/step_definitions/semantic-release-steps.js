@@ -8,6 +8,6 @@ Then('the packages will be published with semantic-release', async function () {
   assert.include(devDependencies, 'semantic-release-monorepo');
   assert.equal(
     scripts.release,
-    'lerna exec --concurrency 1 -- npx semantic-release --no-ci --extends semantic-release-monorepo'
+    'lerna exec --concurrency 1 -- npx semantic-release --extends semantic-release-monorepo'
   );
 });
