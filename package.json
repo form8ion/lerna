@@ -86,6 +86,6 @@
     "deepmerge": "^4.2.2"
   },
   "peerDependencies": {
-    "@form8ion/javascript": ">=13.7.0 || 2.0.0"
+    "@form8ion/javascript": ">=2.0.0"
   }
 }
