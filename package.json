@@ -54,7 +54,7 @@
     "@form8ion/commitlint-config": "1.0.23",
     "@form8ion/eslint-config": "1.10.0",
     "@form8ion/eslint-config-cucumber": "1.4.0",
-    "@form8ion/eslint-config-mocha": "1.2.14",
+    "@form8ion/eslint-config-mocha": "1.2.15",
     "@form8ion/javascript-core": "4.0.1",
     "@form8ion/remark-lint-preset": "2.1.7",
     "@istanbuljs/nyc-config-babel": "3.0.0",
