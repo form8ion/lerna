@@ -61,7 +61,7 @@
     "@travi/any": "2.0.19",
     "@form8ion/javascript": "3.5.2",
     "babel-plugin-istanbul": "6.1.1",
-    "ban-sensitive-files": "1.9.16",
+    "ban-sensitive-files": "1.9.17",
     "chai": "4.3.4",
     "codecov": "3.8.3",
     "cross-env": "7.0.3",
