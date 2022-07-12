@@ -42,7 +42,7 @@ suite('lerna scaffolder', () => {
     assert.calledWith(
       fs.writeFile,
       `${projectRoot}/lerna.json`,
-      JSON.stringify({version: 'independent', packages: ['packages/*'], npmClient: packageManager})
+      JSON.stringify({version: 'independent', packages: ['packages/*'], npmClient: packageManager}, null, 2)
     );
   });
 });

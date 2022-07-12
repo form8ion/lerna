@@ -1,10 +1,12 @@
-import {promises as fs} from 'fs';
+import {fileTypes, writeConfigFile} from '@form8ion/core';
 
-export default function ({projectRoot, packageManager}) {
-  fs.writeFile(
-    `${projectRoot}/lerna.json`,
-    JSON.stringify({version: 'independent', packages: ['packages/*'], npmClient: packageManager})
-  );
+export default async function ({projectRoot, packageManager}) {
+  await writeConfigFile({
+    format: fileTypes.JSON,
+    name: 'lerna',
+    path: projectRoot,
+    config: {version: 'independent', packages: ['packages/*'], npmClient: packageManager}
+  });
 
   return {
     devDependencies: ['lerna'],
