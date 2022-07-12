@@ -8,7 +8,11 @@ export default function ({projectRoot, packageManager}) {
 
   return {
     devDependencies: ['lerna'],
-    scripts: {bootstrap: 'lerna bootstrap', 'test:packages': 'lerna run --parallel test'},
+    scripts: {
+      bootstrap: 'lerna bootstrap',
+      'test:packages': 'lerna run --parallel test',
+      'test:packages:since': 'lerna run --parallel test --since HEAD'
+    },
     badges: {
       contribution: {
         lerna: {
