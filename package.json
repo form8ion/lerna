@@ -80,7 +80,7 @@
     "rimraf": "5.0.1",
     "rollup": "3.25.1",
     "rollup-plugin-auto-external": "2.0.0",
-    "sinon": "15.1.2"
+    "sinon": "15.2.0"
   },
   "dependencies": {
     "@form8ion/core": "^2.0.0",
