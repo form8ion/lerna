@@ -3,22 +3,14 @@
   "description": "opinionated scaffolder for monorepos managed with lerna",
   "license": "MIT",
   "version": "0.0.0-semantically-released",
-  "files": [
-    "example.js",
-    "lib/"
-  ],
-  "publishConfig": {
-    "access": "public",
-    "provenance": true
-  },
+  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org)",
+  "repository": "form8ion/lerna",
+  "bugs": "https://github.com/form8ion/lerna/issues",
+  "homepage": "https://npm.im/@form8ion/lerna",
   "runkitExampleFilename": "./example.js",
   "main": "lib/index.cjs.js",
   "module": "lib/index.es.js",
   "sideEffects": false,
-  "repository": "form8ion/lerna",
-  "bugs": "https://github.com/form8ion/lerna/issues",
-  "homepage": "https://npm.im/@form8ion/lerna",
-  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org)",
   "scripts": {
     "test": "npm-run-all --print-label build --parallel lint:* --parallel test:*",
     "lint:lockfile": "lockfile-lint",
@@ -46,6 +38,18 @@
     "test:unit:base": "DEBUG=any mocha 'src/**/*-test.js'",
     "lint:peer": "npm ls >/dev/null",
     "prepare": "husky install"
+  },
+  "files": [
+    "example.js",
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "dependencies": {
+    "@form8ion/core": "^3.0.0",
+    "deepmerge": "^4.2.2"
   },
   "devDependencies": {
     "@babel/register": "7.22.5",
@@ -78,10 +82,6 @@
     "rollup": "3.27.0",
     "rollup-plugin-auto-external": "2.0.0",
     "sinon": "15.2.0"
-  },
-  "dependencies": {
-    "@form8ion/core": "^3.0.0",
-    "deepmerge": "^4.2.2"
   },
   "peerDependencies": {
     "@form8ion/javascript": ">=2.0.0"
