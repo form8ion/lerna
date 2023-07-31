@@ -17,14 +17,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
-      - name: Read .nvmrc
-        run: echo ::set-output name=NVMRC::$(cat .nvmrc)
-        id: nvm
       - name: Setup node
         uses: actions/setup-node@e33196f7422957bea03ed53f6fbb155025ffc7b8 # v3.7.0
         with:
-          node-version: ${{ steps.nvm.outputs.NVMRC }}
-      - uses: bahmutov/npm-install@c5482d70ec8706408996e31ac94075030694993f # v1.8.32
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm clean-install
+      - run: npm audit signatures
       - run: npm test
       - uses: codecov/codecov-action@v3
   release:
