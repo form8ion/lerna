@@ -62,7 +62,7 @@
     "@form8ion/eslint-config-mocha": "3.0.1",
     "@form8ion/javascript": "11.10.0",
     "@form8ion/javascript-core": "10.0.1",
-    "@form8ion/remark-lint-preset": "6.0.1",
+    "@form8ion/remark-lint-preset": "6.0.2",
     "@travi/any": "3.0.0",
     "ban-sensitive-files": "1.10.0",
     "c8": "8.0.1",
