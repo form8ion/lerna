@@ -83,7 +83,7 @@
     "rimraf": "5.0.5",
     "rollup": "3.29.4",
     "rollup-plugin-auto-external": "2.0.0",
-    "sinon": "16.0.0"
+    "sinon": "16.1.0"
   },
   "peerDependencies": {
     "@form8ion/javascript": ">=2.0.0"
