@@ -101,7 +101,7 @@ $ npm test
 
 [github-actions-ci-link]: https://github.com/form8ion/lerna/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster
 
-[github-actions-ci-badge]: https://github.com/form8ion/lerna/workflows/Node.js%20CI/badge.svg
+[github-actions-ci-badge]: https://img.shields.io/github/actions/workflow/status/form8ion/lerna/node-ci.yml.svg?branch=master&logo=github
 
 [coverage-link]: https://codecov.io/github/form8ion/lerna
 
