@@ -1,5 +1,6 @@
 import {assert} from 'chai';
-import scaffoldRelease from './release';
+
+import scaffoldRelease from './release.js';
 
 suite('release scaffolder', () => {
   test('that pacakges will be released with semantic-release', async () => {

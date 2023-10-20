@@ -1,8 +1,10 @@
 import {promises as fs} from 'fs';
+
 import {assert} from 'chai';
 import sinon from 'sinon';
 import any from '@travi/any';
-import scaffold from './lerna';
+
+import scaffold from './lerna.js';
 
 suite('lerna scaffolder', () => {
   let sandbox;

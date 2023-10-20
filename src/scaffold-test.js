@@ -1,9 +1,10 @@
 import sinon from 'sinon';
 import any from '@travi/any';
 import {assert} from 'chai';
-import * as lernaScaffolder from './lerna';
-import * as releaseScaffolder from './release';
-import scaffold from './scaffold';
+
+import * as lernaScaffolder from './lerna.js';
+import * as releaseScaffolder from './release.js';
+import scaffold from './scaffold.js';
 
 suite('scaffolder', () => {
   let sandbox;
