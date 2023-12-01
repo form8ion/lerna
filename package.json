@@ -76,7 +76,7 @@
     "mock-fs": "5.2.0",
     "npm-run-all2": "6.1.1",
     "package-preview": "4.0.0",
-    "publint": "0.2.5",
+    "publint": "0.2.6",
     "remark-cli": "12.0.0",
     "remark-toc": "9.0.0",
     "remark-usage": "11.0.1",
