@@ -24,7 +24,7 @@ suite('lerna scaffolder', () => {
     assert.deepEqual(
       await scaffold({projectRoot, packageManager}),
       {
-        devDependencies: ['lerna'],
+        dependencies: {javascript: {development: ['lerna']}},
         scripts: {
           bootstrap: 'lerna bootstrap',
           'test:packages': 'lerna run --parallel test',

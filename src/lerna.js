@@ -9,7 +9,7 @@ export default async function ({projectRoot, packageManager}) {
   });
 
   return {
-    devDependencies: ['lerna'],
+    dependencies: {javascript: {development: ['lerna']}},
     scripts: {
       bootstrap: 'lerna bootstrap',
       'test:packages': 'lerna run --parallel test',
