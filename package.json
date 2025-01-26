@@ -35,7 +35,7 @@
     "watch": "run-s 'build:js -- --watch'",
     "prepack": "run-s build",
     "test:unit": "cross-env NODE_ENV=test c8 run-s test:unit:base",
-    "test:unit:base": "DEBUG=any mocha 'src/**/*-test.js'",
+    "test:unit:base": "DEBUG=any vitest run",
     "lint:peer": "npm ls >/dev/null",
     "prepare": "husky install",
     "lint:publish": "publint"
@@ -60,7 +60,6 @@
     "@form8ion/commitlint-config": "1.0.65",
     "@form8ion/eslint-config": "7.0.7",
     "@form8ion/eslint-config-cucumber": "1.4.1",
-    "@form8ion/eslint-config-mocha": "3.0.1",
     "@form8ion/javascript": "11.10.1",
     "@form8ion/javascript-core": "10.1.0",
     "@form8ion/remark-lint-preset": "6.0.2",
@@ -73,7 +72,6 @@
     "gherkin-lint": "4.2.2",
     "husky": "8.0.3",
     "lockfile-lint": "4.12.1",
-    "mocha": "10.2.0",
     "mock-fs": "5.2.0",
     "npm-run-all2": "6.1.1",
     "package-preview": "4.0.0",
@@ -84,7 +82,8 @@
     "rimraf": "5.0.5",
     "rollup": "4.9.0",
     "rollup-plugin-auto-external": "2.0.0",
-    "sinon": "17.0.1"
+    "vitest": "3.0.4",
+    "vitest-when": "0.6.0"
   },
   "peerDependencies": {
     "@form8ion/javascript": ">=2.0.0"
