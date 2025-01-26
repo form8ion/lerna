@@ -51,7 +51,7 @@
   },
   "packageManager": "npm@11.0.0+sha256.f69aa67502f6fc1fe330e4b454110d625205e95df557aef9779e1e813e0e1289",
   "dependencies": {
-    "@form8ion/core": "^3.0.0",
+    "@form8ion/core": "^4.0.0",
     "deepmerge": "^4.2.2"
   },
   "devDependencies": {
