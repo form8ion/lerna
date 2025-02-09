@@ -28,6 +28,7 @@ opinionated scaffolder for monorepos managed with [Lerna](https://lerna.js.org/)
 [![MIT license][license-badge]][license-link]
 [![npm][npm-badge]][npm-link]
 [![Try @form8ion/lerna on RunKit][runkit-badge]][runkit-link]
+![node][node-badge]
 
 <!--consumer-badges end -->
 
@@ -120,3 +121,5 @@ $ npm test
 [runkit-badge]: https://badge.runkitcdn.com/@form8ion/lerna.svg
 
 [slsa-badge]: https://slsa.dev/images/gh-badge-level2.svg
+
+[node-badge]: https://img.shields.io/node/v/@form8ion/lerna?logo=node.js
