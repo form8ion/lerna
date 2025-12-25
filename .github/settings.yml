@@ -2,5 +2,5 @@ _extends: .github
 repository:
   name: lerna
   description: opinionated scaffolder for monorepos managed with lerna
-  homepage: 'https://npm.im/@form8ion/lerna'
+  homepage: https://npm.im/@form8ion/lerna
   private: false
