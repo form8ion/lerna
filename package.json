@@ -79,7 +79,7 @@
     "mock-fs": "5.2.0",
     "npm-run-all2": "6.1.1",
     "publint": "0.3.16",
-    "remark-cli": "12.0.0",
+    "remark-cli": "12.0.1",
     "remark-toc": "9.0.0",
     "remark-usage": "11.0.1",
     "rimraf": "5.0.5",
