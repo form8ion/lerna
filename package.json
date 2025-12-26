@@ -85,7 +85,7 @@
     "rimraf": "5.0.10",
     "rollup": "4.54.0",
     "rollup-plugin-auto-external": "2.0.0",
-    "vitest": "3.0.5",
+    "vitest": "3.2.4",
     "vitest-when": "0.6.0"
   }
 }
